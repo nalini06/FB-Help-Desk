@@ -1,0 +1,42 @@
+.App {
+    background-color: #3377ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    /* Add right padding */
+    padding-right: 30px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    /* Adjust width to account for added padding */
+    width: calc(100% - 20px);
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    background-color: #3377ff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #000099;
+  }
+  

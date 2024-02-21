@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const postWebhook = (req, res) =>{
     let body = req.body;
-
+    console.log("Webhook post call" + req.body);
     console.log(`\u{1F7EA} Received webhook:`);
     console.dir(body, { depth: null });
 
@@ -23,6 +23,7 @@ const postWebhook = (req, res) =>{
 const getWebhook = (req, res) =>{
 let VERIFY_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
 // Parse the query params
+console.log("Verifed, get call");
 let mode = req.query["hub.mode"];
 let token = req.query["hub.verify_token"];
 let challenge = req.query["hub.challenge"];
